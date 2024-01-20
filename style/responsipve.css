@@ -1,0 +1,45 @@
+@media screen and (max-width : 1200px){
+ p{
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+ }
+ .skills-right ul li{
+    font-size: 0.9rem;
+ }
+}
+@media screen and (max-width : 850px){
+/* burger*/
+.burger{
+    display: block;
+    cursor: pointer;
+}
+/* navigation*/
+ nav{
+    position: fixed;
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    background: plum;
+    border-left: 1px solid plum;
+    z-index: 9;
+    transform: translateX(100%);
+ }
+
+ nav ul{
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+ }
+.nav-active{
+    transform: translateX(0);
+}
+
+} 
+@media screen and (max-width : 650px){
+    
+}
+
+

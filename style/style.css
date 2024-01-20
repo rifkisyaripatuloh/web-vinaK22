@@ -1,0 +1,346 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "roboto", sans-serif;
+}
+h1,h2,h3,h4,h5,h6, strong{
+    color:#232e35 ;
+}
+p{
+    font-size: 1rem;/* 16px*/
+    line-height: 1.9rem;
+}
+p,span,label,input,textarea,li{
+    color: #656d72;
+}
+a{
+    text-decoration: none;
+}
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+@media screen and (max-width : 1200px){
+    .main-container{
+        width: 90%;
+    }
+}
+/*bottons*/
+.btn{
+    padding:1rem 1.5rem ;
+    background: white;
+    border: 1.5px solid #f1f1f1;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.btn:hover{
+    box-shadow: rgb(0,0,0,0.04)0px 3px 5px;
+}
+.section-title{
+    font-size: 2rem;
+    margin: 1rem 0 4rem;
+}
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color:#656d72;
+    position: relative;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.pre-title::before{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+/* layout*/
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 3rem;
+}
+/*logo and navigasion menu*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size:2rem ;
+}
+.logo a{
+    color:#232e35 ;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    color:#232e35 ;
+}
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}        
+.burger{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top:30px;
+    right: 35px;
+}
+/* hero section */
+#hero{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+}
+.hero-name{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+.hero-name span{
+    color: purple;
+}
+.hero-right img{
+    width: 250px;
+    
+}
+.hero-right{
+    display: flex;
+    justify-content: center;
+}
+#services{
+    background-color: #fbfbfb;
+    padding: 6rem 0;
+}
+.services .pre-title{
+    margin: 0 auto;
+    text-align: center;
+}
+.services-title{
+    text-align: center;
+}
+.services{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: white;
+    border-radius: 0.7rem;
+    border: #5d51e8;
+}
+.services h4{
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+.services-icon{
+    background: plum;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+}
+.services-icon svg{
+    fill:purple ;
+}
+/* Portopolio section*/
+#portopolios{
+    padding: 6rem 0;
+    
+}
+.portopolio{
+    border-radius: 0.7rem;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+}
+.portopolio-cover{
+    height: 250px;
+}
+.portopolio-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portopolio-info{
+    padding: 2rem 1.5rem;
+}
+.portopolio-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.portopolio h4{
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+.portopolio-title a svg:hover{
+    fill: plum;
+}
+.portopolio-title a svg{
+    transition: 0.2s ease-in-out;
+}
+.portopolio-tags{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+.portopolio-tags div{
+    font-size: 0,9rem;
+    border: 1px solid #f1f1f1;
+    padding: 0.4rem 1rem;
+    color: #656d72;
+}
+/*skill and education*/
+#skills{
+    padding: 6rem 0;
+    background: #fbfbfb;
+}
+.skills-grid{
+    display:grid ;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 3rem;
+}
+.education{
+    display: flex;
+    gap: 2rem;
+}
+.education .line{
+    padding: 0 0.7rem;
+}
+.education .line div{
+    width: 2px;
+    height: 100%;
+    color: plum;
+    position: relative;
+}
+.education-info p{
+    margin: 0.6rem 0 1.4rem;
+}
+.education-years{
+    margin-bottom: 3rem;
+}
+.education .line div:before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #f1f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+.skills-right ul {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+/*Contact section*/
+#contact{
+    padding: 6rem 0;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 3rem;
+}
+.contact-form div{
+    margin-bottom: 1.4rem;
+}
+.contact-form input,.contact-form textarea{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "roboto", sans-serif;
+    background: #fbfbfb;
+    border: 1px solid #f1f1f1;
+    border-radius: 3px;
+    resize: none;
+}
+.contact-form input::placeholder,.contact-form textarea::placeholder{
+    color: plum;
+}
+.contact-form input:focus,.contact-form textarea:focus{
+    outline: none;
+    border: 1px solid #7d7d7d;
+}
+.btn-Submit{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: #7e74f1;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.btn-Submit:hover{
+    background: #5d51e8;
+}
+.contact-icon{
+    background:plum;
+    width: 53px;
+    height: 53px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-icon{
+    fill: #5d51e8;
+}
+.contact-item-ditail{
+    margin-bottom: 0.6rem;
+
+}
+.contact-item{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+footer{
+    padding: 4rem 0;
+    background: #fbfbfb;
+    text-align: center;
+}
+.footer-icon{
+    margin-bottom: 1rem;
+}
+.footer-icon{
+    margin: 0 0.5rem;
+}
+.footer-icon svg{
+    fill: #3e3f40;
+}
+.footer-icon a:hover svg {
+    fill: #0000;
+}
